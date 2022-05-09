@@ -58,14 +58,11 @@ Set `working_dir` from **both** `vcom` and `vlog` to use the temporary project:
 
 #### Known Bugs:
 
-**Linter randomly stops parsing source code.** 
-
-Probable cause: Interference between ModelSim and Linter trying to parse the source code at the same time.
-
+**Linter randomly stops parsing source code.**  
+Probable cause: Interference between ModelSim and Linter trying to parse the source code at the same time.  
 Solution: remove the `.lock` file from the temporary modelsim folder.
 
 ## Key binds
 
-`CTRL + A` Auto indents the inputs and signal declarations from .vhd files
-
+`CTRL + A` Auto indents the inputs and signal declarations from .vhd files  
 `F12` Call *Text Pastry* Package, which can generate a list of numbers
