@@ -1,0 +1,17 @@
+{
+    "recursive": true,
+
+    "max_iterations": 4,
+
+    "active_sets": ["makefile"],
+
+    "sets": {
+        "main": {
+            "{{NAME}}": "Molly",
+            "{{NICKNAME}}": "Mrs. Puff"
+        },
+        "makefile": {
+            "-Werror=": "-Wno-"
+        }
+    }
+}

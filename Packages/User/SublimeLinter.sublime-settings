@@ -1,0 +1,23 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+        "vcom": {
+            "args": [
+                "-2008", 
+                "-lint", 
+                "-check_synthesis", 
+                "-suppress", "1320"
+            ],
+            "working_dir": "D:/Documents/Git/SublimeLinter"
+            //"working_dir": "$project_path"
+        },
+        "vlog": {
+            "args": ["-sv", "-lint"],
+            "working_dir": "D:/Documents/Git/SublimeLinter"
+            //"working_dir": "$project_path"
+        }
+    },
+    "delay": 0.5,
+    //"lint_mode": "load_save",
+    "debug": true
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "caption": "Verilog Gadget: Generate Testbench",
+        "command": "verilog_gadget_tb_gen"
+    },
+    {
+        "caption": "Verilog Gadget: Instantiate Module",
+        "command": "verilog_gadget_module_inst"
+    },
+    // {
+    //     "caption": "Verilog Gadget: Insert Template",
+    //     "command": "verilog_gadget_template"
+    // },
+    {
+        "caption": "Verilog Gadget: Insert Header",
+        "command": "verilog_gadget_insert_header",
+        "args": {"args" : {"cmd":"insert"}}
+    },
+    {
+        "caption": "Verilog Gadget: Insert Snippet",
+        "command": "verilog_gadget_insert_snippet"
+    },
+    {
+        "caption": "Verilog Gadget: Repeat Code with Numbers",
+        "command": "verilog_gadget_repeat_code"
+    },
+    {
+        "caption": "Verilog Gadget: VCD to WaveDrom",
+        "command": "verilog_gadget_vcd_to_wavedrom"
+    },
+ ]

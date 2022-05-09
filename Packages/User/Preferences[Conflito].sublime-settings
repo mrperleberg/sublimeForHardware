@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Verilog",
+		"Verilog Gadget",
+		"Vintage"
+	],
+	"theme": "Default.sublime-theme",
+	"word_wrap": "false"
+}

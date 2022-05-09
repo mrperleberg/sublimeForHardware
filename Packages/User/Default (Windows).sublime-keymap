@@ -1,0 +1,98 @@
+[
+	{
+  		"keys": ["ctrl+f10"], "command": "vhdl_module_inst",
+  		"context":
+  		[
+  			{ "key": "num_selections", "operator": "equal", "operand": 1 },
+  			{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}
+  		]
+  	},
+  	{
+  		"keys": ["ctrl+shift+a"], "command": "vhdl_align",
+  		"context":
+  		[
+  			{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}
+  		]
+  	},
+  	{
+  		"keys": ["ctrl+alt+f"], "command": "vhdl_find_instance",
+  		"context":
+  		[
+  			{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}
+  		]
+  	},
+  	{
+  		"keys": ["f12"], "command": "vhdl_hierarchy_goto_definition",
+  		"context":[
+  			{ "key": "selector", "operator": "equal", "operand": "text.result-vhdl"}
+  		]
+  	},
+
+
+
+    { 
+      "keys": ["ctrl+shift+q"], "command": "text_pastry_show_command_line", 
+      "args": { "text": "" } 
+    },
+
+    { 
+      "keys": ["f12"], "command": "text_pastry_show_command_line", 
+      "args": { "text": "\\i" } 
+    },
+
+    { 
+      "keys": ["ctrl+alt+t"], "command": "text_pastry_show_menu" 
+    },
+
+    { 
+      "keys": ["ctrl+alt+v"], "command": "text_pastry_insert_text", 
+      "args": { "clipboard": true, "separator": "\\n" } 
+    },
+
+    { 
+      "keys": ["ctrl+alt+b"], "command": "text_pastry_redo" 
+    }
+
+    ,
+
+
+    {
+        "keys": ["ctrl+alt+n"],
+        "command": "file_header_new_file",
+        "args":{
+            "paths": []
+        }
+    },
+    {
+        "keys": ["ctrl+alt+a"],
+        "command": "file_header_add_header",
+        "args":{
+            "paths": []
+        }
+    },
+
+    {
+        "keys": ["ctrl+s"], 
+        "command": "run_multiple_commands",
+        "context": [{"key": "setting.command_mode"}],
+        "args": {
+            "commands": [
+                { "command": "save" },
+                { "command": "sublime_linter_lint" }
+            ]
+        }
+    },
+
+    {
+        "keys": ["ctrl+shift+v"], 
+        "command": "run_multiple_commands",
+        "args": {
+            "commands": [
+                { "command": "paste_and_indent" },
+                { "command": "merge_variables" }
+            ]
+        }
+    }
+
+
+]

@@ -1,0 +1,68 @@
+{
+
+	/*  UI Configuration  _________________________________________
+	*/
+
+	"context_menu": true,
+	"verilog_ext":	[ ".v", ".vh", ".sv", ".svh" ], // for context_menu
+
+	"Generate Testbench": "show",
+	"Generate Testbench Ref/Imp": "hide",
+	"Module Wrapper": "hide",
+	"Simulation Template": "show",
+	"Insert Header": "show",
+	"Insert Snippet": "show",
+	"Instantiate Module": "show",
+	"Repeat Code with Numbers": "show",
+	"VCD to WaveDrom": "show",
+
+	/*  Core settings  ____________________________________________
+	*/
+
+	// default prefix for a instance name
+	"inst_prefix": "inst_",
+
+	// alignment (tab or space)
+	"tab_assignment": false,
+	"tab_port_declaration": true,
+	"tab_signal_declaration": true,
+	"tab_port_connection": false,
+
+	/*  Header / Snippet  _________________________________________
+	*/
+
+	// header template file path
+	"header": "example",
+	"auto_update_header": true,
+
+	// parameterized snippets
+	"snippets" : {
+		"Complex Multiplier" : { // example
+			"codes" : "Packages/Verilog Gadget/template/verilog_cplxm.v",
+			"param" : ["AB", "BB"],
+			"evals" : ["ZB=AB+BB+1"], // simple calculation only
+			"descr" : "INPUTA , INPUTB [ complex mult ]",
+			"regex" : "\\s*(?P<AB>\\d+)\\s*[,.\\s]\\s*(?P<BB>\\d+)\\s*"// regex for parameter input
+		},
+		/* add more snippets here */
+	},
+
+	/*  for Testbench  ____________________________________________
+	*/
+
+	"reset"     : [],        // default asynchronous reset name, leave a blank not to use it
+	"sreset"    : ["srstb"], // default synchronous reset name, leave a blank not to use it
+	"clock"     : ["clk", "uclk", "cclk"], // default clock name, leave a blank not to use it
+	"wave_type" : "fsdb",    // type of waveform, one of "fsdb", "vpd", "shm", "vcd"
+	"task_init" : true,
+	"task_drive": true,
+
+	/*  Simulation Template  ______________________________________
+	*/
+
+	// specify a your own template path (compressed file - zip,tgz,tar)
+	// there are 2 examples - example-modelsim, example-vcs
+	"simulation_template"  : "example-modelsim",
+	"simulation_directory" : "simtest"
+
+}

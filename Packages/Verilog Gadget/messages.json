@@ -1,0 +1,18 @@
+{
+    "install" : "README.md",
+    "v0.6.28" : "changelog/v0.6.28.txt",
+    "v0.8.0"  : "changelog/v0.8.0.txt",
+    "v1.0.0"  : "changelog/v1.0.0.md",
+    "v1.1.0"  : "changelog/v1.1.0.md",
+    "v1.2.0"  : "changelog/v1.2.0.md",
+    "v1.2.5"  : "changelog/v1.2.5.md",
+    "v1.4.0"  : "changelog/v1.4.0.md",
+    "v1.4.1"  : "changelog/v1.4.1.md",
+    "v1.5.0"  : "changelog/v1.5.0.md",
+    "v1.6.0"  : "changelog/v1.6.0.md",
+    "v1.6.2"  : "changelog/v1.6.2.md",
+    "v1.7.0"  : "changelog/v1.7.0.md",
+    "v1.8.0"  : "changelog/v1.8.0.md",
+    "v1.11.0" : "changelog/v1.11.0.md",
+    "v1.12.0" : "changelog/v1.12.0.md"
+}
