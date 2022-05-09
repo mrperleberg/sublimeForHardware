@@ -6,9 +6,9 @@ This repository contains all Packages for **Sublime Text 3**  that I have instal
 
 If you already have some Packages installed, I recommend making a backup of `C:\Users\<yourUser>\AppData\Roaming\Sublime Text 3\Packages` folder.
 
-- **Install** Package Control inside sublime text 3 (Preferences -> Install Package Control).
-- **Clone/Download** this github repository to anywhere in your computer.
-- **Copy** the `githubRepository/Packages` folder to `C:\Users\<yourUser>\AppData\Roaming\Sublime Text 3\Packages`
+- **Install** Package Control inside sublime text 3 (Preferences -> Install Package Control).  
+- **Clone/Download** this github repository to anywhere in your computer.  
+- **Copy** the `githubRepository/Packages` folder to `C:\Users\<yourUser>\AppData\Roaming\Sublime Text 3\Packages`  
 - **Restart** Sublime Text 3
 
 ### Symbolic link
@@ -28,18 +28,15 @@ Linter is a analysis tool that find errors in source codes. Linter can be config
 
 [How to add folder to PATH on Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
 
-**1.1** Press Windows, then search for `PATH` or `env`, and go to `Edit the system environment variables`. 
-
-**1.2** Go to `Environment Variables`
-
-**1.3** Then in `System Variables`, edit the `PATH`,
-
-**1.4** In a new line, insert the modelsim tools folder: `C:\intelFPGA\20.1\modelsim_ase\win32aloem`
+**1.1** Press Windows, then search for `PATH` or `env`, and go to `Edit the system environment variables`.  
+**1.2** Go to `Environment Variables`  
+**1.3** Then in `System Variables`, edit the `PATH`  
+**1.4** In a new line, insert the modelsim tools folder: `C:\intelFPGA\20.1\modelsim_ase\win32aloem`  
 
 ### 2: Create a temporary ModelSim project
 
-In Modelsim, just create a new project anywhere. No files need to be added in the project. This project will be used by Linter when parsing the code.
-
+In Modelsim, just create a new project anywhere. No files need to be added in the project.  
+This project will be used by Linter when parsing the code.  
 I recommend in a folder as 
 
     C:\Users\<yourUser>\Documents\modelsimTemporaryForSublime\
@@ -48,11 +45,9 @@ After created, the temporary project can be closed inside the modelsim.
 
 ### 3: Configure Linter to use the temporary project
 
-In Sublime Text 3, go to
-
-Preferences -> Package Settings -> SublimeLinter -> Settings.
-
-Set `working_dir` from **both** `vcom` and `vlog` to use the temporary project:
+In Sublime Text 3, go to  
+Preferences -> Package Settings -> SublimeLinter -> Settings.  
+Set `working_dir` from **both** `vcom` and `vlog` to use the temporary project:  
 
     "working_dir": "C:\Users\<yourUser>\Documents\modelsimTemporaryForSublime\"
 
