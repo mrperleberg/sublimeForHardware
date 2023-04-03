@@ -2,6 +2,7 @@ import sublime_plugin
 import subprocess
 from time import sleep
 import sys
+from sys import platform
  
 cl = lambda line: subprocess.Popen(line, shell=True, stdout=subprocess.PIPE).communicate()[0].strip()
 log = lambda message: sys.stderr.write("Log: %s\n" % message)
@@ -11,6 +12,8 @@ sublimeMainWindowTitle = " - Sublime Text (UNREGISTERED)"
 class LicenseWindowKiller(sublime_plugin.EventListener):
  
     def seek_n_close(self):
+        if not(platform == "linux" or platform == "linux2"):
+            return False
         sublimePid = int(cl("""wmctrl -lp | grep "%s" | awk '{print $3}'""" % sublimeMainWindowTitle).decode())
         if sublimePid:
             sublimeMainWindowId = cl("""wmctrl -lp | grep "%s" | awk '{print $1}'""" % sublimeMainWindowTitle).decode()
@@ -23,6 +26,8 @@ class LicenseWindowKiller(sublime_plugin.EventListener):
         return False
  
     def on_pre_save_async(self, *args):
+        if not(platform == "linux" or platform == "linux2"):
+            return False
         seek = True
         counter = 10
         while seek:
